@@ -6,7 +6,6 @@ const BookCard = ({ book }) => {
     ? `https://covers.openlibrary.org/b/id/${book.cover_i}-M.jpg`
     : "https://via.placeholder.com/150x200?text=No+Cover";
 
-  // Extract the work ID (looks like "/works/OLxxxxW")
   const workKey = book.key.split("/").pop();
 
   return (

@@ -1,4 +1,3 @@
-// src/components/SearchBar.jsx
 import React, { useState } from "react";
 
 const SearchBar = ({ onSearch }) => {
@@ -28,4 +27,4 @@ const SearchBar = ({ onSearch }) => {
   );
 };
 
-export default SearchBar; // ✅ important
+export default SearchBar; 

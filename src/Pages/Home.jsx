@@ -32,11 +32,11 @@ const Home = () => {
   };
 
   return (
-    <div className="flex flex-col items-center justify-center min-h-screen bg-gradient-to-br from-blue-50 via-white to-blue-100 px-4 py-10 text-gray-900">
+    <div className="flex flex-col items-center justify-center min-h-screen bg-gradient-to-br from-blue-50 via-white to-blue-100 px-4 text-gray-900">
       {/* Title */}
       <div className="flex items-center mb-6 space-x-3">
-        <FaBook className="text-blue-600 text-4xl" />
-        <h1 className="text-4xl md:text-5xl font-extrabold text-blue-700 tracking-wide">
+        <FaBook className="text-purple-600 text-4xl" />
+        <h1 className="text-4xl md:text-5xl font-extrabold text-purple-700 tracking-wide">
           Book Finder
         </h1>
       </div>
@@ -49,11 +49,11 @@ const Home = () => {
           value={query}
           onChange={(e) => setQuery(e.target.value)}
           onKeyDown={(e) => e.key === "Enter" && fetchBooksByTitle()}
-          className="flex-grow border border-blue-300 rounded-lg px-4 py-2 focus:outline-none focus:ring-2 focus:ring-blue-500 text-lg"
+          className="flex-grow border border-purple-300 rounded-lg px-4 py-2 focus:outline-none focus:ring-2 focus:ring-purple-500 text-lg"
         />
         <button
           onClick={fetchBooksByTitle}
-          className="flex items-center bg-blue-600 text-white px-5 py-2 rounded-lg hover:bg-blue-700 transition duration-200"
+          className="flex items-center bg-purple-600 text-white px-5 py-2 rounded-lg hover:bg-purple-700 transition duration-200"
         >
           <FaSearch className="mr-2" /> Search
         </button>
@@ -76,7 +76,6 @@ const Home = () => {
         </div>
       )}
 
-      {/* Empty State */}
       {!loading && !error && books.length === 0 && (
         <p className="text-center text-gray-600 mt-10 flex items-center space-x-2">
           <FaSearch className="text-blue-500 text-xl" />

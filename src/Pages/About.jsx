@@ -19,12 +19,6 @@ const About = () => {
           <strong>Tailwind CSS</strong>. It demonstrates key web development concepts
           such as API integration, dynamic routing, responsive design, and clean UI/UX.
         </p>
-
-        <p className="text-gray-700 leading-relaxed">
-          Developed by <span className="font-semibold">Vaishnavi Jadhav</span> as part
-          of a take-home challenge for the Full Stack Developer role at{" "}
-          <strong>Aganitha Cognitive Solutions</strong>.
-        </p>
       </div>
     </div>
   );
